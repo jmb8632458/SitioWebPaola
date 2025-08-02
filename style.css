@@ -1,7 +1,7 @@
 /* --- FUENTES PERSONALIZADAS --- */
 @font-face {
-    font-family: 'Beautiful Dream';
-    src: url('Beautiful Dream.otf') format('opentype');
+    font-family: 'BeautifulDream';
+    src: url('BeautifulDream.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -27,7 +27,7 @@ html {
     scroll-behavior: smooth;
 }
 .profile-info h1 {
-    font-family: 'Beautiful Dream', sans-serif;
+    font-family: 'BeautifulDream', sans-serif;
     color: var(--primary-dark);
 }
 body {
@@ -40,7 +40,7 @@ body {
 }
 
 .headers {
-    font-family: 'Beautiful Dream', sans-serif;
+    font-family: 'BeautifulDream', sans-serif;
     color: #1C4C96;
     margin-top: 20px;
     margin-bottom: 10px;
