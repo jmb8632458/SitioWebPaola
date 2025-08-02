@@ -1,0 +1,272 @@
+/* --- FUENTES PERSONALIZADAS --- */
+@font-face {
+    font-family: 'Beautiful Dream';
+    src: url('Beautiful Dream.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* --- VARIABLES DE COLOR Y CONFIGURACIONES GLOBALES --- */
+:root {
+    --primary-dark: #dfaeea;
+    --primary-blue: #afe8ff;
+    --primary-blue-dark: #2980b9;
+    --text-light: #bdc3c7;
+    --text-main: #333;
+    --text-secondary: #555;
+    --bg-light: #f4f7f9;
+    --bg-white: #ffffff;
+    --border-color: #e0e0e0;
+    --highlight-bg: #eaf5fc;
+    --cta-green: #fff9c4;
+    --cta-green-dark: #7fdbff;
+}
+
+/* --- ESTILOS GENERALES --- */
+html {
+    scroll-behavior: smooth;
+}
+.profile-info h1 {
+    font-family: 'Beautiful Dream', sans-serif;
+    color: var(--primary-dark);
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--bg-light);
+    color: var(--text-main);
+    margin: 0;
+    padding: 20px;
+}
+
+.headers {
+    font-family: 'Beautiful Dream', sans-serif;
+    color: #1C4C96;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+
+/* --- CONTENEDOR PRINCIPAL --- */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: var(--bg-white);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #dfaeea;
+    overflow: hidden;
+}
+
+/* --- ENCABEZADO Y PERFIL --- */
+.header {
+    background: linear-gradient(90deg, #dfaeea 0%, #afe8ff 100%);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+    background-color: var(--primary-dark);
+    color: var(--bg-white);
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid var(--bg-white);
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.logo-slogan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.slogan {
+    margin: 0;
+    font-size: 1.1rem;
+    color: var(--bg-white);
+    text-align: center;
+    font-style: italic;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-info h1 {
+    margin: 0 0 5px 0;
+    font-size: 2.5rem;
+    color: var(--bg-white);
+}
+
+.profile-info h2 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #1C4C96;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 12px;
+}
+
+.contact-info li a {
+    color: #1C4C96;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.contact-info li a:hover {
+    color: var(--bg-white);
+}
+
+.contact-info li:not(:last-child)::after {
+    content: '|';
+    color: #000000;
+    margin-left: 12px;
+}
+
+/* --- SECCIÓN RESUMEN DE PERFIL --- */
+.profile-summary {
+    padding: 30px 40px;
+    font-size: 1.1rem;
+    text-align: justify;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* --- CONTENIDO PRINCIPAL --- */
+.main-content {
+    padding: 30px 40px;
+}
+
+.main-content h2 {
+    font-size: 2rem;
+    color: var(--primary-dark);
+    border-bottom: 3px solid var(--primary-blue);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.main-content h3 {
+    font-size: 1.5rem;
+    color: #34495e;
+    margin-top: 30px;
+}
+
+.main-content p,
+.main-content li {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+}
+
+/* --- SEPARADOR --- */
+.separator-line {
+    margin: 40px 0;
+    border: 0;
+    border-top: 1px solid var(--border-color);
+}
+
+/* --- SECCIÓN DE HERRAMIENTAS --- */
+.tools-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.tool-card {
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#card1 {
+    background-color: #FFFDE7 !important; /* Amarillo pastel */
+}
+#card2 {
+    background-color: #E8F5E9 !important; /* Verde pastel */
+}
+#card3 {
+    background-color: #FCE4EC !important; /* Rosado pastel */
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* --- BOTÓN DE LLAMADA A LA ACCIÓN (CTA) --- */
+.cta-button {
+    display: inline-block;
+    background-color: var(--cta-green);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+}
+
+.cta-button:hover {
+    background-color: var(--cta-green-dark);
+}
+
+
+.back-button-simple {
+    display: inline-block;
+    background-color: #6c757d;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.back-button-simple:hover {
+    background-color: #5a6268;
+}
+
+/* --- MEDIA QUERIES PARA MÓVILES --- */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 30px 20px;
+    }
+
+    .contact-info {
+        justify-content: center;
+    }
+
+    .profile-info h1 {
+        font-size: 2rem;
+    }
+
+    .profile-summary,
+    .main-content {
+        padding: 25px 20px;
+    }
+
+}
+
