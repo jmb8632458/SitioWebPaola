@@ -154,7 +154,11 @@ body {
 
 .profile-summary-img {
   width: 150px;
+  max-width: 100%;
+  height: auto;
   border-radius: 8px;
+  object-fit: contain; /* Cambia a 'cover' si prefieres recorte tipo avatar */
+  display: block;
 }
 
 /* Responsive para móviles */
