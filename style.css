@@ -63,6 +63,7 @@ body {
 .header {
     background: linear-gradient(90deg, #dfaeea 0%, #afe8ff 100%);
     display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 30px;
     padding: 40px;
@@ -138,42 +139,23 @@ body {
     margin-left: 12px;
 }
 
+.header-right-img {
+    max-width: 120px; /* Ajusta el tamaño según lo necesites */
+    height: auto;
+    margin-left: 20px;
+         width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid var(--bg-white);
+    flex-shrink: 0;
+}
+
 /* --- SECCIÓN RESUMEN DE PERFIL --- */
 .profile-summary {
     padding: 30px 40px;
     font-size: 1.1rem;
     text-align: justify;
     border-bottom: 1px solid var(--border-color);
-}
-
-.profile-summary-flex {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.profile-summary-img {
-  width: 150px;
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  object-fit: contain; /* Cambia a 'cover' si prefieres recorte tipo avatar */
-  display: block;
-}
-
-/* Responsive para móviles */
-@media (max-width: 600px) {
-  .profile-summary-flex {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-  .profile-summary-img {
-    width: 100%;
-    max-width: 220px;
-    margin-left: 0;
-    align-self: center;
-  }
 }
 
 /* --- CONTENIDO PRINCIPAL --- */
