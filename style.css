@@ -252,14 +252,10 @@ body {
 
 /* --- MEDIA QUERIES PARA MÓVILES --- */
 @media (max-width: 768px) {
-
-    /* General */
     body {
         padding: 10px;
-        font-size: 14px; /* Ajuste de tamaño de texto */
     }
 
-    /* Header */
     .header {
         flex-direction: column;
         text-align: center;
@@ -267,79 +263,20 @@ body {
         padding: 30px 20px;
     }
 
-    .logo {
-        height: 150px; /* Reduce el tamaño del logo */
-        width: auto;
+    .contact-info {
+        justify-content: center;
     }
-    .logo2 {
-        width: 80px; /* Reduce el tamaño del logo */
-        height: 80px;
-    }
-    .logo-slogan {
-        align-items: center;
-    }
-    .profile-info {
-        text-align: center;
-    }
-    
 
     .profile-info h1 {
         font-size: 2rem;
     }
 
-    .profile-info h2 {
-        font-size: 1rem;
-        margin-top: 10px;
-    }
-
-    /* Contacto */
-    .contact-info {
-        justify-content: center;
-        gap: 12px 20px;
-    }
-
-    .contact-info li {
-        font-size: 0.9rem; /* Ajuste de texto */
-    }
-
-    /* Ajuste en los cards de herramientas */
-    .tools-section {
-        grid-template-columns: 1fr; /* Los cards se apilan en lugar de estar en una fila */
-        gap: 15px;
-    }
-
-    /* Sección de perfil */
-    .profile-summary {
-        padding: 20px 15px;
-        font-size: 1rem;
-    }
-
-    /* Ajustar los márgenes en las secciones */
+    .profile-summary,
     .main-content {
-        padding: 20px 15px;
+        padding: 25px 20px;
     }
 
-    /* Modificar márgenes y tamaños de texto */
-    .main-content h2 {
-        font-size: 1.5rem;
-    }
+}
 
-    .main-content h3 {
-        font-size: 1.2rem;
-    }
 
-    .tool-card p {
-        font-size: 0.9rem;
-    }
-
-    /* Botones de CTA */
-    .cta-button, .back-button-simple {
-        padding: 8px 16px;
-        font-size: 0.9rem;
-    }
-
-    .tool-card {
-        padding: 15px;
-    }
-    }
 
