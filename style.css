@@ -75,7 +75,10 @@ body {
 .logo {
     width: 200px;
     height: 200px;
+    border-radius: 50%;
     border: 3px solid var(--bg-white);
+    object-fit: contain; /* Cambiado de cover a contain */
+    background-color: var(--bg-white); /* Opcional: para que el fondo sea blanco si la imagen no es cuadrada */
     flex-shrink: 0;
 }
 
