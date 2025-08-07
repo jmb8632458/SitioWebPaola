@@ -146,6 +146,32 @@ body {
     border-bottom: 1px solid var(--border-color);
 }
 
+.profile-summary-flex {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-summary-img {
+  width: 150px;
+  border-radius: 8px;
+}
+
+/* Responsive para móviles */
+@media (max-width: 600px) {
+  .profile-summary-flex {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .profile-summary-img {
+    width: 100%;
+    max-width: 220px;
+    margin-left: 0;
+    align-self: center;
+  }
+}
+
 /* --- CONTENIDO PRINCIPAL --- */
 .main-content {
     padding: 30px 40px;
