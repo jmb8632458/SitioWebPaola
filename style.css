@@ -281,21 +281,22 @@ body {
 /* Ajuste para móviles: logo y texto "Perfil" en columna */
 @media (max-width: 600px) {
   .profile-summary > div {
-    flex-direction: row !important;
+    flex-direction: column !important;
     align-items: center !important;
-    justify-content: flex-start !important;
+    justify-content: center !important;
+    text-align: center !important;
   }
   .profile-summary .logo2 {
-    margin-right: 12px !important; /* margen pequeño para separar el logo del texto */
-    margin-bottom: 0 !important;
-    width: 60px; /* tamaño más pequeño para móviles */
-    height: 60px;
+    margin: 0 auto 10px auto !important;
+    display: block !important;
+    width: 80px;
+    height: 80px;
   }
   .profile-summary .headers {
-    text-align: left !important;
-    font-size: 1em;
+    text-align: center !important;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 10px;
+    font-size: 1.1em;
   }
 }
 
